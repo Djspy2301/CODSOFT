@@ -6,4 +6,227 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* Navigation Bar */
+#nav-list ul{
+    display: flex;
+    justify-content: space-around;
+}
 
+#nav-list ul li{
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+    align-items: center;
+}
+#nav-list ul li img{
+    height: 70px;
+    width: 80px;
+    object-fit: contain;
+    mix-blend-mode:darken;
+}
+#nav-list a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+    
+}
+
+.nav-container{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+    width: 100vw;
+    min-height: 50px;
+    position: sticky;
+}
+
+#nav-logo{
+    font-size: 2.3rem;
+}
+/* Main Container */
+.container{
+    /* background-color: #f1f6f9;
+    background-image: linear-gradient(160deg, #f1f6f9 0%, #d7e5e3 100%); */
+
+
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+}
+
+.btn{
+    background-color: #FBAB7E;
+    font-size: 1em;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+/* Content */
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    padding: 30px
+}
+img{
+    height: 500px;
+    width: 500px;
+    mix-blend-mode:darken;
+    
+}
+.intro h1{
+    font-size: 48;
+    margin-bottom: 10px;
+    line-height: 56px;
+}
+.intro h2{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.intro h5{
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.intro h6{
+    margin: 25px 0px 5px 0px;
+}
+/* About */
+.abt-pg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.line{
+    width: 100px;
+    height: 2px;
+    margin: 0px 30px;
+    background: orange;
+}
+
+.dg{
+    display: flex;
+    align-items: center;
+    
+}
+.abt-pg h2{
+    font-size: 1.5rem;
+}
+.abt-pg p{
+    margin: 70px 30px;
+}
+
+#val-vid{
+    width: 45%;
+    margin: 30px;
+}
+
+#omen{
+    margin: 20px 0px 0px 40px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    box-shadow: 5px 5px 20px black;
+}
+
+#abt-content{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#cards-cont{
+    display: flex;
+    justify-content: space-around;
+}
+.abt-pg p{
+    font-weight: bold;
+}
+.cards{
+    position: relative;
+    height: 200px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cards img{
+    height: 200px;
+    width: 180px;
+    
+}
+
+.cards:hover .info{
+    cursor: pointer;
+    bottom: 0px;
+
+}
+
+.info{
+    height: 150px;
+    width: 180px;
+    padding-left: 6px;
+    position: absolute;
+    z-index: 10;
+    bottom: -100%;
+    background-color: rgb(27,27,27,.7);
+    color: white;
+    transition: 0.5s;
+}
+
+.info h2{
+    margin: 10px;
+    font-size: 24px;
+}
+
+.info span{
+    margin: 10px;
+    text-align: center;
+}
+/* Perk Page */
+.perk-pg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 30px;
+}
+
+.perk-pg p{
+    text-align: center;
+}
+
+#perk-cont{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#perk-cont img{
+    height: 500px;
+    width: 400px;
+    box-shadow: 0px 10px 10px;
+}
+
+/* Footer */
+#foot {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}   
+#foot p{
+    font-size: large;
+    font-weight: 900;
+}
