@@ -56,15 +56,18 @@
 
 .btn{
     background-color: #FBAB7E;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
     font-size: 1em;
-    height: 50px;
-    width: 150px;
+    padding: 5px;
     border-radius: 30px;
 }
 .btn:hover{
     cursor: pointer;
     background-color: #FBAB7E;
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    color: white;
 }
 /* Content */
 .content{
@@ -73,22 +76,41 @@
     flex-wrap: wrap-reverse;
     padding: 30px
 }
-img{
+.content img{
     height: 500px;
     width: 500px;
     mix-blend-mode:darken;
-    
+    animation: float 3s ease-in-out infinite;
 }
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
 .intro h1{
+    position: relative;
     font-size: 48;
     margin-bottom: 10px;
     line-height: 56px;
+    
 }
+
+
+
 .intro h2{
+    position: relative;
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 40px;
 }
+
+
 
 .intro h5{
     font-size: 20px;
