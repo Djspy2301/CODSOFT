@@ -28,22 +28,31 @@
     text-decoration: none;
     margin-left: 30px;
     color: black;
-    
+}
+
+#nav-list a:hover{
+    text-decoration: underline;
+    color: rgb(239, 239, 239);
 }
 
 .nav-container{
     background-color: #FBAB7E;
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-
     width: 100vw;
     min-height: 50px;
-    position: sticky;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 #nav-logo{
     font-size: 2.3rem;
 }
 /* Main Container */
+#Home{
+    height: 65px;
+}
 .container{
     
 
@@ -70,12 +79,14 @@
 }
 /* Content */
 .content{
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     /* flex-wrap: wrap-reverse; */
     padding: 30px
 }
 .content img{
+    margin-top: 65px;
     height: 500px;
     width: 500px;
     mix-blend-mode:darken;
@@ -136,6 +147,7 @@
 }
 
 .dg{
+    margin-top: 100px;
     display: flex;
     align-items: center;
     
@@ -158,8 +170,17 @@
     width: 200px;
     border-radius: 100px;
     box-shadow: 5px 5px 20px black;
+    animation: scaleAnimation 5.3s alternate infinite;
 }
 
+@keyframes scaleAnimation {
+    0%, 100% {
+      transform: scale(1); /* Initial and final scale */
+    }
+    50% {
+      transform: scale(1.1); /* Scaled up */
+    }
+}
 #abt-content{
     display: flex;
     flex-direction: row-reverse;
@@ -173,6 +194,7 @@
     font-weight: bold;
 }
 .cards{
+    
     position: relative;
     height: 200px;
     width: 180px;
@@ -180,19 +202,23 @@
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
     cursor: pointer;
+    
 }
 .cards img{
     height: 200px;
     width: 180px;
-    
+    transition: transform 0.3s ease-in-out;
 }
 
 .cards:hover .info{
     cursor: pointer;
     bottom: 0px;
-
+    
 }
 
+.cards img:hover{
+    transform: scale(1.1);
+}
 .info{
     height: 150px;
     width: 180px;
