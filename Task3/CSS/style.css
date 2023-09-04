@@ -6,7 +6,7 @@
 
 .container{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(161, 206, 234);
     display: flex;
     align-items: center;
@@ -15,9 +15,9 @@
 }
 
 .calcy{
-    background-color: rgb(26, 24, 24);
+    background-color: rgb(20, 20, 20);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 
@@ -33,7 +33,7 @@
     padding: 10px;
 }
 .row .btn{
-    border: 0;
+    border: 1;
     outline: 0;
     width: 80px;
     height: 70px;
@@ -43,4 +43,7 @@
     font-size: 20px;
     cursor: pointer;
     margin: 8px;
+}
+#equal{
+    width: 280px;
 }
